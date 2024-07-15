@@ -66,13 +66,8 @@
 
 // export default SolveChallenge;
 
-
-import React from 'react'
-
 const SolveChallenge = () => {
-  return (
-    <div>SolveChallenge</div>
-  )
-}
+  return <div>SolveChallenge</div>;
+};
 
-export default SolveChallenge
+export default SolveChallenge;

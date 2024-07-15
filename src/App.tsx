@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import MainRouter from "./router/MainRouter";
+import MainRouter from "./router/mainRouter";
 import {
   CssBaseline,
   ThemeProvider,
@@ -8,7 +8,6 @@ import {
   useMediaQuery,
   PaletteMode,
   Stack,
- 
 } from "@mui/material";
 
 import "./App.css";
