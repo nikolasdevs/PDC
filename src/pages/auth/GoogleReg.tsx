@@ -1,6 +1,6 @@
 import React from "react";
 // import googleIcon from "../../assets/images/google-icon-logo-svgrepo-com.svg";
-import { GoogleIcon } from "../../assets/customIcons";
+import GoogleIcon from "../../assets/images/google-icon-logo-svgrepo-com.svg";
 import { Button } from "@mui/material";
 const clientId =
   "784544161259-kgks7ehf9ese00a3st5iii3hmtcefvs1.apps.googleusercontent.com"; // Replace with your Google OAuth client ID
@@ -21,7 +21,7 @@ const GoogleReg: React.FC = () => {
       variant="outlined"
       color="secondary"
       onClick={handleAuth}
-      startIcon={<GoogleIcon />}
+      startIcon={GoogleIcon}
     >
       Sign in with Google
     </Button>

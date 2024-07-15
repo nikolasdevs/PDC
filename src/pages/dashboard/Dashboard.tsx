@@ -99,8 +99,6 @@ const LoginTheme = createTheme({
   },
 });
 
-
-
 const Dashboard: React.FC = () => {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(true);
@@ -108,12 +106,12 @@ const Dashboard: React.FC = () => {
     (state: RootState) => state.auth.isAuthenticated
   );
 
-  const usersName = useSelector(
-    (state: RootState) =>
-      state.auth.user?.data?.profile?.name.charAt(0).toUpperCase() +
-      state.auth.user?.data?.profile?.name.slice(1)
-  );
-  console.log(usersName);
+  // const usersName = useSelector(
+  //   (state: RootState) =>
+  //     state.auth.user?.name.charAt(0).toUpperCase() +
+  //     state.auth.user?.name.slice(1)
+  // );
+  // console.log(usersName);
 
   useEffect(() => {
     const checkAuthStatus = async () => {
@@ -127,7 +125,7 @@ const Dashboard: React.FC = () => {
     checkAuthStatus();
   }, [isAuthenticated, navigate]);
 
-  const welcome = `Welcome ${usersName}`;
+  // const welcome = `Welcome ${usersName}`;
 
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = () => {
@@ -235,7 +233,7 @@ const Dashboard: React.FC = () => {
                           cursor: "pointer",
                         }}
                       >
-                        {<Typography>{welcome}!</Typography>}
+                        {/* {<Typography>{welcome}!</Typography>} */}
                       </Typography>{" "}
                       <MenuPopupState />
                     </Box>
@@ -299,7 +297,7 @@ const Dashboard: React.FC = () => {
                       }}
                     >
                       {/* <Deposits /> */}
-                      <Typography>Hello {usersName}</Typography>
+                      {/* <Typography>Hello {usersName}</Typography> */}
                     </Paper>
                   </Grid>
                   <Grid item xs={12} md={8} lg={9}>

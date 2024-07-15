@@ -23,7 +23,7 @@ const Editor: React.FC<EditorProps> = ({
 }) => {
   const [open, setOpen] = useState(true);
 
-  const handleChange = (editor: any, data: any, value: string) => {
+  const handleChange = (_editor: unknown, _data: unknown, value: string) => {
     onChange(value);
   };
 
